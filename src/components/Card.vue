@@ -18,32 +18,6 @@
             {{ card.original_title || card.original_name }}
           </p>
 
-          <div>
-            <strong>Voto: </strong>
-
-            <div class="stars">
-              <div class="empty">
-                <div class="inner">
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </div>
-              </div>
-
-              <div class="solid" :style="`width:${6.7 * card.vote_average}px`">
-                <div class="inner">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <p>
             <strong>Lingua: </strong>
             <img
@@ -121,18 +95,5 @@ export default {
   color: white;
   transform: rotateY(180deg);
   padding:10px;
-}
-.stars{
-  position:relative;
-  margin-bottom: 15px;
-  .empty, .solid{
-    position:absolute;
-    top: -18px;
-    left: 40px;
-    overflow: hidden;
-  }
-  .inner{
-    width: 68px;
-  }
 }
 </style>
